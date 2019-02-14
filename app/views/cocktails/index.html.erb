@@ -1,3 +1,26 @@
-<h1> All your cocktails </h1>
+<div class="navbar-lewagon">
+  <a href="#">
+    <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/cf/14/0f/cf140fa3-5412-9d07-5687-29a438898150/AppIcon-1x_U007emarketing-85-220-5.png/1200x630wa.png" class="brand">
+  </a>
 
-<p> Welcome to your awesome cocktail bar! </p>
+  <div class="navbar-lewagon-actions d-none d-sm-flex">
+    <a href="#" class="navbar-lewagon-link">All your cocktails </a>
+    <div class="badge-container">
+      <a href="#" class="navbar-lewagon-link"> <%= link_to "Add a cocktail 🍸", new_cocktail_path %>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2698&q=80.png);">
+  <div class="container">
+    <h1>Welcome to your <strong>awesome cocktail bar!</strong> <strong>🍹</strong></h1>
+    <br>
+    <p>Change your life and begin to drink.</p>
+  </div>
+</div>
+
+<% @cocktails.each do |cocktail| %>
+            <p><%= cocktail.name %></p>
+            <br>
+<% end %>

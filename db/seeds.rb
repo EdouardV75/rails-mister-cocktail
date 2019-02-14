@@ -12,3 +12,6 @@ Ingredient.create(name: "mint leaves")
 
 Cocktail.create(name: "Bloody Mary")
 Cocktail.create(name: "Margarita")
+Cocktail.create(name: "Gin Tonic")
+Cocktail.create(name: "Negroni")
+Cocktail.create(name: "Whisky Sour")
