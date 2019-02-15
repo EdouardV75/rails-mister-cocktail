@@ -6,6 +6,8 @@ def index
 
 def show
     @cocktail = Cocktail.find(params[:id])
+    @dose = Dose.new
+    @review = Review.new
   end
 
   def new           # GET /cocktails/new
