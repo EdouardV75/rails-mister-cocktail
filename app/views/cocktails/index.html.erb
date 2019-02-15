@@ -21,6 +21,9 @@
 </div>
 
 <% @cocktails.each do |cocktail| %>
-            <p><%= cocktail.name %></p>
+            <p><%= cocktail.name %>
+            <%= link_to "Details", cocktail_path(cocktail), class: 'card-link' %>
+            </p>
             <br>
 <% end %>
+
